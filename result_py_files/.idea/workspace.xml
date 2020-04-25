@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7fa5621-3278-48a5-8b88-7b0ac56d139f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1b2CaLhGKa0hxhyWZSDfxP6oPdW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunManager" selected="Python.roots">
+    <configuration name="draw_ladder" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="result_py_files" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1 week" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1 week/draw_ladder.py" />
+      <option name="PARAMETERS" value="5" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="roots" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="result_py_files" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1 week" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1 week/roots.py" />
+      <option name="PARAMETERS" value="1 -3 -4" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="summing_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="result_py_files" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1 week" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1 week/summing_numbers.py" />
+      <option name="PARAMETERS" value="1234" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.summing_numbers" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1020" y="138" key="#draw_ladder" timestamp="1587825664472">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="1020" y="138" key="#draw_ladder/65.0.1855.1080@65.0.1855.1080" timestamp="1587825664472" />
+    <state x="1020" y="138" key="#roots" timestamp="1587827145479">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="1020" y="138" key="#roots/65.0.1855.1080@65.0.1855.1080" timestamp="1587827145479" />
+    <state x="1020" y="138" key="#summing_numbers" timestamp="1587825928630">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state x="1020" y="138" key="#summing_numbers/65.0.1855.1080@65.0.1855.1080" timestamp="1587825928630" />
+    <state width="1195" height="304" key="GridCell.Tab.0.bottom" timestamp="1587827330471">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1195" height="304" key="GridCell.Tab.0.bottom/65.0.1855.1080@65.0.1855.1080" timestamp="1587827330471" />
+    <state width="1195" height="304" key="GridCell.Tab.0.center" timestamp="1587827330470">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1195" height="304" key="GridCell.Tab.0.center/65.0.1855.1080@65.0.1855.1080" timestamp="1587827330470" />
+    <state width="1195" height="304" key="GridCell.Tab.0.left" timestamp="1587827330470">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1195" height="304" key="GridCell.Tab.0.left/65.0.1855.1080@65.0.1855.1080" timestamp="1587827330470" />
+    <state width="1195" height="304" key="GridCell.Tab.0.right" timestamp="1587827330471">
+      <screen x="65" y="0" width="1855" height="1080" />
+    </state>
+    <state width="1195" height="304" key="GridCell.Tab.0.right/65.0.1855.1080@65.0.1855.1080" timestamp="1587827330471" />
+  </component>
+</project>
