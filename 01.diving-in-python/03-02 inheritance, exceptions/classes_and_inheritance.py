@@ -22,9 +22,6 @@ class Truck(CarBase):
         super().__init__(brand, photo_file_name, carrying)
         self.body_length, self.body_width, self.body_height = Truck.take_values_from_str(body_whl)
 
-    def get_params(self):
-        print(self.body_length, self.body_width, self.body_height)
-
     @staticmethod
     def take_values_from_str(body_whl):
         answer = (0, 0, 0)
@@ -58,9 +55,9 @@ def check_params(car_type: str, brand: str, passenger_seat_count: str, photo_fil
     if photo_file_name.split(".")[-1] not in {"jpg", "jpeg", "png", "gif"}:
         return False
 
-    if car_type is "Car" and (not passenger_seat_count or not passenger_seat_count.isdigit()):
+    if car_type == "car" and (not passenger_seat_count or not passenger_seat_count.isdigit()):
         return False
-    if car_type is "spec_machine" and not extra:
+    if car_type == "spec_machine" and not extra:
         return False
 
     try:
@@ -91,9 +88,7 @@ def get_car_list(csv_filename):
         reader = csv.reader(csv_fd, delimiter=';')
         next(reader)  # пропускаем заголовок
         for row in reader:
-            if len(row) != 7:
-                continue
-            if not check_params(*row):
+            if len(row) != 7 or not check_params(*row):
                 continue
             car_list.append(create_vehicle_from_params(row))
     return car_list
