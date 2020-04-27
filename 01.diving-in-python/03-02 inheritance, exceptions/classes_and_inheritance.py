@@ -55,7 +55,6 @@ def check_params(car_type: str, brand: str, passenger_seat_count: str, photo_fil
         return False
     if not brand:
         return False
-
     if photo_file_name.split(".")[-1] not in {"jpg", "jpeg", "png", "gif"}:
         return False
 
