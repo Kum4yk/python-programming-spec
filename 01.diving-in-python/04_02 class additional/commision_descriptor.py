@@ -10,21 +10,23 @@ class Value:
             raise NotImplementedError(
                 f"class {type(obj).__name__} has no attribute \"commission\""
             )
-        
+
         result = value - value * obj.commission
         result = int(result) if result - int(result) == 0 else result
         self.value = result
 
 
 if __name__ == "__main__":
-    class Account:
-        amount = Value()
+    def init(self, name):
+        self.commission = name
 
-        def __init__(self, commission):
-            self.some = commission
+    Test = type(
+        "Test",
+        (),
+        {"amount": Value(), "__init__": init}
+    )
 
-
-    new_account = Account(0.1)
+    new_account = Test(0.1)
     new_account.amount = 100
 
     print(new_account.amount)
