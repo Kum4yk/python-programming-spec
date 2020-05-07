@@ -16,11 +16,11 @@ class File:
             return file.read()
 
     def write(self, text):
-        with open(self.path) as file:
+        with open(self.path, "w") as file:
             file.write(text)
 
     def __add__(self, other):
-        new_path = os.path.join(tempfile.gettempdir(), f'temp_file_{File.__counter}')
+        new_path = os.path.join(tempfile.gettempdir(), f"temp_{File.__counter}.txt")
         res = File(new_path)
         res.write(self.read() + other.read())
         return res

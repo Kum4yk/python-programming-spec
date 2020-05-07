@@ -5,32 +5,39 @@ class CarBase:
     def __init__(self, brand: str, photo_file_name: str, carrying: float):
         self.brand = brand
         self.photo_file_name = photo_file_name
-        self.carrying = carrying
+        self.carrying = float(carrying)
 
     def get_photo_file_ext(self):
         return "." + self.photo_file_name.split(".")[-1]
-
+    
+    @property
+    def car_type(self):
+        raise NotImplementedError
 
 class Car(CarBase):
+    car_type = "car"
+    
     def __init__(self, brand: str, photo_file_name: str, carrying: float, passenger_seats_count: int):
         super().__init__(brand, photo_file_name, carrying)
         self.passenger_seats_count = passenger_seats_count
 
 
 class Truck(CarBase):
+    car_type = "truck"
+    
     def __init__(self, brand: str, photo_file_name: str, carrying: float, body_whl: str):
         super().__init__(brand, photo_file_name, carrying)
         self.body_length, self.body_width, self.body_height = Truck.take_values_from_str(body_whl)
 
     @staticmethod
     def take_values_from_str(body_whl):
-        answer = (0, 0, 0)
+        answer = (0.0, 0.0, 0.0)
         body_whl = body_whl.split("x")
         if len(body_whl) == 3:
             try:
                 answer = map(float, body_whl)
             except ValueError:
-                answer = (0, 0, 0)
+                answer = (0.0, 0.0, 0.0)
         return answer
 
     def get_body_volume(self):
@@ -38,13 +45,15 @@ class Truck(CarBase):
 
 
 class SpecMachine(CarBase):
+    car_type = "spec_machine"
+    
     def __init__(self, brand, photo_file_name, carrying, extra):
         super().__init__(brand, photo_file_name, carrying)
         self.extra = extra
 
 
-def check_params(car_type: str, brand: str, passenger_seat_count: str, photo_file_name: str, body_whl, carrying: str,
-                 extra: str):
+def check_params(car_type: str, brand: str, passenger_seat_count: str,
+                 photo_file_name: str, body_whl, carrying: str, extra: str):
     car_type = car_type.lower()
     possible_cars = {"car", "truck", "spec_machine"}
 
@@ -70,16 +79,16 @@ def check_params(car_type: str, brand: str, passenger_seat_count: str, photo_fil
 
 def create_vehicle_from_params(params):
     car_type, brand, passenger_seats_count, photo_file_name, body_whl, carrying, extra = params
-
-    carrying = float(carrying)
+    carry = float(carrying)
+    
     if car_type == "car":
-        passenger_seats_count = int(passenger_seats_count)
-        return Car(brand, photo_file_name, carrying, passenger_seats_count)
+        seats = int(passenger_seats_count)
+        return Car(brand, photo_file_name, carry, seats)
 
     if car_type == "truck":
-        return Truck(brand, photo_file_name, carrying, body_whl)
+        return Truck(brand, photo_file_name, carry, body_whl)
 
-    return SpecMachine(brand, photo_file_name, carrying, extra)
+    return SpecMachine(brand, photo_file_name, carry, extra)
 
 
 def get_car_list(csv_filename):
