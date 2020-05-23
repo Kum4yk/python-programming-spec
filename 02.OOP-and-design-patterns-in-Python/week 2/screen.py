@@ -100,9 +100,9 @@ def get_points(base_points, count):
 def get_knot(points, count):
     if len(points) < 3:
         return []
-    res = []
+    res = list()
     for i in range(-2, len(points) - 2):
-        ptn = []
+        ptn = list()
         ptn.append(mul(add(points[i], points[i + 1]), 0.5))
         ptn.append(points[i + 1])
         ptn.append(mul(add(points[i + 1], points[i + 2]), 0.5))
