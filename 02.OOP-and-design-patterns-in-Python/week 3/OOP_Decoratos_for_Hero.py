@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-
+"""
 class Hero:
     def __init__(self):
         self.positive_effects = []
@@ -26,6 +26,7 @@ class Hero:
 
     def get_stats(self):
         return self.stats.copy()
+"""
 
 
 class AbstractEffect(ABC, Hero):
