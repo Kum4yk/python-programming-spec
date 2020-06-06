@@ -48,14 +48,12 @@ class FullNotificationPrinter(AbstractObserver):
 
     def __init__(self):
         self.achievements: list = list()
-        self.__set_achieve: set = set()  # fast but memory expensive
 
     def update(self, message):
         """
         у FullNotificationPrinter хранится список достижений в том порядке,
          в котором они генерируются Engine
         """
-        if message not in self.__set_achieve:
-            self.__set_achieve.add(message)
+        if message not in self.achievements:
             self.achievements.append(message)
 

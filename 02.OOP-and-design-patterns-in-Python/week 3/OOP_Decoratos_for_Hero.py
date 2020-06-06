@@ -29,7 +29,7 @@ class Hero:
 """
 
 
-class AbstractEffect(ABC, Hero):
+class AbstractEffect(Hero, ABC):
     def __init__(self, base):
         self.base = base
 
@@ -51,9 +51,6 @@ class AbstractPositive(AbstractEffect):
         pos_effects: list = self.base.get_positive_effects()
         pos_effects.append(self.__class__.__name__)
         return pos_effects
-
-    def get_stats(self):
-        pass
 
 
 class Berserk(AbstractPositive):
@@ -88,9 +85,6 @@ class AbstractNegative(AbstractEffect):
         new_negative: list = self.base.get_negative_effects()
         new_negative.append(self.__class__.__name__)
         return new_negative
-
-    def get_stats(self):
-        pass
 
 
 class Weakness(AbstractNegative):
