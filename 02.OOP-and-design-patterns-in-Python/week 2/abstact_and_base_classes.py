@@ -4,7 +4,7 @@ from numbers import Number
 
 
 class Base(ABC):
-    def __len__(self, data, result):
+    def __init__(self, data, result):
         self.data = data
         self.result = result
 
@@ -57,3 +57,4 @@ class B(A):
 class C(A):
     def get_loss(self) -> Number:
         return sum([abs(x - y) for (x, y) in zip(self.data, self.result)])
+
